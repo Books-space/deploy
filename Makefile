@@ -7,4 +7,5 @@ db:
 fill_db:
 	docker-compose exec backend python -m webapp.tools.db fill /data/books.csv
 
-
+stop:
+	docker-compose down

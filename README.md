@@ -13,7 +13,7 @@ make install
 2). Then create database in postgres container:
 
 ```bash
-make db
+make db.create
 ```
 
 3). And finally fill the db with data from source csv file with books information;
@@ -23,7 +23,7 @@ make db
 3.2. Then run following command in terminal:
 
 ```bash
-make fill_db
+make db.fill
 ```
 
 Congratulation! The preparation is now complete.
@@ -34,5 +34,5 @@ into Bot's telegram chat [This section is under construction yet])
 To stop the containers execute following
 
 ```bash
-make stop
+make down
 ```

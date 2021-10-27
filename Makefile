@@ -1,11 +1,11 @@
 install:
 	docker-compose up -d
 
-db:
+db.create:
 	docker-compose exec backend python -m webapp.tools.db create
 
-fill_db:
+db.fill:
 	docker-compose exec backend python -m webapp.tools.db fill /data/books.csv
 
-stop:
+down:
 	docker-compose down

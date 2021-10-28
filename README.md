@@ -31,8 +31,4 @@ Congratulation! The preparation is now complete.
 (You can check that is everything is working by typing "Кизи"
 into Bot's telegram chat [This section is under construction yet])
 
-To stop the containers execute following
-
-```bash
-make down
-```
+To stop the containers execute following: make down

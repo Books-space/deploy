@@ -5,11 +5,13 @@ services:
     networks:
       - bookmarket
     env_file: .env
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
     ports:
       - 5432:5432
 
   backend:
-    image: allyotov/bookmarket_backend
+    image: allyotov/bookmarket_backend:1.0.0
     networks:
       - bookmarket
     env_file: .env
@@ -19,7 +21,7 @@ services:
       - 5000:5000
 
   bot:
-    image: allyotov/bookmarket_bot
+    image: allyotov/bookmarket_bot:1.0.0
     networks:
       - bookmarket
     env_file: .env

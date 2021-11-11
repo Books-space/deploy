@@ -9,7 +9,7 @@ services:
       - ./postgres-data:/var/lib/postgresql/data
 
   backend:
-    image: allyotov/bookmarket_backend:1.0.0
+    image: allyotov/bookmarket_backend:1.0.1
     networks:
       - bookmarket
     env_file: .env
@@ -17,7 +17,7 @@ services:
       - ./backend_data:/data
 
   bot:
-    image: allyotov/bookmarket_bot:1.0.0
+    image: allyotov/bookmarket_bot:1.1.0
     networks:
       - bookmarket
     env_file: .env
